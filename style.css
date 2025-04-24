@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+
+body{
+    background-color: rgb(30, 30, 72);
+
+}
+h1{
+    padding: 30px;
+    text-align: center;
+    font-weight: 900;
+
+}
+
+.text-color{
+    color: white;
+}
+
+.container{
+    /* width: 100%; */
+    /* margin: auto;
+    padding: 15px; */
+     display: flex; 
+    
+}
+.left-parent{
+    width: 60%;
+    padding: 20px;
+}
+#leftchart{
+    border-radius: 8px;
+}
+.left{
+    height: 500px;
+    /* width: 60%; */
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.parent-right{
+
+     width: 40%;
+    padding: 20px;
+    padding-right: 80px;
+}
+
+
+#right{
+    
+    justify-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+.btn-div{
+    
+   
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+.btnStock{
+    width: 80px;
+}
+
+.btn-div button {
+    background-color: darkblue;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#fourButtons{
+
+        display: flex;
+        gap: 10px;
+        justify-content: space-evenly;
+}
+.bookvalue, .profit {
+   /* min-width: 60px; */
+    text-align: right;
+    width: 80px;
+  /* max-width: 80px; */
+}
+
+.time-btn {
+    background-color: #1a1a2e;
+    color: white;
+    border: 1px solid white;
+    padding: 6px 12px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 80px;
+    background-color: darkblue;
+
+}
+
+
+.time-btn:hover {
+  cursor: pointer;
+    color: white;
+    background-color: rgb(9, 9, 75) ;
+}
+
+#desc{
+
+    display: flex;
+    flex-direction: column;
+    margin: 10px
+}
+
+.company-info{
+    
+    margin: 5px;
+    display: flex;
+    gap: 60px;
+    color: white;
+
+}
+
+.companySummary{
+    color: white;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 8px;
+}
