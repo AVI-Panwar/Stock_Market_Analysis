@@ -15,6 +15,7 @@ let stocksStatsData;
 let companywiseChartData;
 let firstTimeChartDataShow;
 let stocksProfileData;
+let selectedStock = "AAPL";
 
 console.log("stock ");
 
@@ -51,7 +52,7 @@ fetch("https://stocksapi-uhe1.onrender.com/api/stocks/getstocksdata")
 
         buttonTime.addEventListener('click', ()=>{
               const dataAccToTime = getTimelyData(time);
-              renderChart(dataAccToTime);
+              renderChart(dataAccToTime,selectedStock);
         })
         
         fourButtonsDiv.appendChild(buttonTime);
@@ -262,7 +263,7 @@ fetch("https://stocksapi-uhe1.onrender.com/api/stocks/getstocksprofiledata")
              buttonStock.addEventListener('click', ()=>{
                 companywiseChartData = getCompanyWiseStocks(stock);
                 const  selectedTimeDate =  getTimelyData("5y");
-                
+                selectedStock= stock;
                 renderCompanyInformation(stock)
                 renderChart(selectedTimeDate, stock);
              })
